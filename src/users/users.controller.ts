@@ -10,11 +10,11 @@ export class UsersController {
     return this.userService.findAll();
   }
 
-  @Get('users')
+  @Get()
   getAllUsers() {
     return this.userService.findAll();
   }
-  @Post('users')
+  @Post()
   createUser(@Body() createUser: Users): void {
     console.log(createUser);
     if (createUser) {
