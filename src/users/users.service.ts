@@ -12,7 +12,7 @@ export class UsersService {
   async findAll(): Promise<Users[]> {
     return this.usersRepository.find();
   }
-  async create(createUserDto: Users): Promise<Users> {
-    return this.usersRepository.save(createUserDto);
+  async create(createUser: Users): Promise<Users> {
+    return this.usersRepository.save(createUser);
   }
 }
