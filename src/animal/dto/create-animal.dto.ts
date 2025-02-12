@@ -1,9 +1,9 @@
-import { IsString, IsInt } from 'class-validator';
+import { IsString, IsBoolean } from 'class-validator';
 
 export class CreateAnimalDto {
   @IsString()
   name: string;
 
-  @IsInt()
+  @IsBoolean()
   isCat?: boolean;
 }
